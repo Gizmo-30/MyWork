@@ -1,0 +1,129 @@
+@media(prefers-color-scheme: dark) {
+    :root {
+        --primary-background: #151437;
+        --priamry-text-color: #fff;
+    }
+
+    body {
+        background: var(--primary-background);
+    }
+
+    .header__nav-logo::before {
+        content: url('../images/logo_dark.png');
+    }
+
+    .header__content-text,
+    .header__toggler-icon,
+    .main__about-description {
+        color: var(--priamry-text-color);
+    }
+
+    .main__about-text {
+        background: var(--primary-color);
+        color: var(--priamry-text-color);
+    }
+
+    .main__about-content {
+        background: var(--primary-background);
+    }
+    
+    .accordion-button.collapsed {
+        background: var(--primary-background) !important;
+    }
+    
+    .accordion-item {
+        border: none !important;
+        background-color: var(--primary-background) !important;
+    }
+    
+    .main__works-link, .main__works-content {
+        background: var(--primary-background);
+    }
+    
+    .main__works-link.active {
+        color: var(--primary-background);
+    }
+    
+    .main__works-text {
+        color: var(--priamry-text-color);
+    }
+    
+    .footer__link, .footer__contact {
+        color: var(--priamry-text-color);
+    }
+    
+    .footer__link:hover, .footer__contact:hover {
+        color: var(--priamry-text-color);
+    }
+}
+
+@media(max-width: 992px) {
+
+    .rectangle,
+    .shape {
+        display: none;
+    }
+
+    .header__nav-link,
+    .header__nav-btn {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .main__about-img {
+        width: 100%;
+    }
+
+    .main__about-content {
+        margin-top: 50px;
+    }
+
+    .main__about-text {
+        padding: 20px;
+        left: 100px;
+        top: -15px;
+    }
+    
+    .accordion {
+        margin-bottom: 30px;
+    }
+    
+    .main__works-content {
+        margin-top: 30px;
+    }
+    
+}
+
+@media(max-width: 992px) {
+    .main__works-img {
+        object-fit: contain;
+    }
+    
+    .main__works-name {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 375px) {
+    .header__skills-title {
+        font-size: 16px;
+    }
+
+    .header__content-title {
+        text-align: center;
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .header__content-text {
+        text-align: center;
+    }
+    
+    .main__about-title {
+        line-height: 45px;
+    }
+        
+    .main__about-link {
+        margin: 0 auto;
+    }
+}
